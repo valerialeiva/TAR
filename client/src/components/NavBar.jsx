@@ -3,13 +3,15 @@ import styled from 'styled-components'
 
 import Logo from './Logo'
 import Links from './Links'
+import MegaLogo from './MegaLogo'
+import TopIcons from './TopIcons'
 
-const Container = styled.div.attrs({
+/*const Container = styled.div.attrs({
     className: 'container',
 })``
-
+*/
 const Nav = styled.nav.attrs({
-    className: 'navbar navbar-expand-lg navbar-dark bg-dark',
+    className: 'navbar navbar-expand-lg navbar-light bg-light',
 })`
     margin-bottom: 20 px;
 `
@@ -17,12 +19,15 @@ const Nav = styled.nav.attrs({
 class NavBar extends Component {
     render() {
         return (
-            <Container>
+//originalmente todo estaba dentro de <Container></Container> sin div
+            <div>
+                <MegaLogo/>
+                <TopIcons></TopIcons>
                 <Nav>
                     <Logo />
                     <Links />
                 </Nav>
-            </Container>
+            </div>
         )
     }
 }

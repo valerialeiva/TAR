@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
+//import { NavBar, MoreBuyCarousel } from '../components'
 import { NavBar } from '../components'
 import { MoviesList, MoviesInsert, MoviesUpdate } from '../pages'
 
@@ -19,8 +20,13 @@ function App() {
                     component={MoviesUpdate}
                 />
             </Switch>
+
         </Router>
+
     )
 }
+
+//            <MoreBuyCarousel></MoreBuyCarousel>
+
 
 export default App
